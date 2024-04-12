@@ -301,9 +301,9 @@ WHERE f.codigo = p.codigo_fabricante AND f.nombre = 'Crucial' AND p.precio > 200
 SELECT  p.codigo, p.nombre, p.precio, p.codigo_fabricante, f.nombre
 FROM producto as p, fabricante as f
 WHERE f.codigo = p.codigo_fabricante 
-AND f.nombre = 'Asus'
-AND f.nombre = 'Hewlett-Packard'
-AND f.nombre = 'Seagate';
+OR f.nombre = 'Asus'
+OR f.nombre = 'Hewlett-Packard'
+OR f.nombre = 'Seagate';
 
 9.Devuelve un listado con todos los productos de los
 fabricantes Asus, Hewlett-Packardy Seagate. Utilizando el operador IN.
